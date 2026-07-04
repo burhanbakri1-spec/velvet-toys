@@ -1,0 +1,196 @@
+@font-face {
+  font-family: 'Eurostile BQ';
+  src: url('../assets/fonts/EurostileBQ-BoldExtended-83cd6114f65e2d8453584fcb2fd45a58.woff2') format('woff2'),
+       url('../assets/fonts/EurostileBQ-BoldExtended-7756fdd736b001afc5a4cbe99a0b558c.woff') format('woff'),
+       url('../assets/fonts/EurostileBQ-BoldExtended-8adeb3a5201c640004f1cc514c28e66b.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter-Regular-c8ba52b05a9ef10f47584d08ece2ec5c.woff2') format('woff2'),
+       url('../assets/fonts/Inter-Regular-8c206db99195777c67691cbba9d64393.woff') format('woff'),
+       url('../assets/fonts/Inter-Regular-e89cb19905e7db5591b0037b15a1d9cd.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'boorsok';
+  src: url('../assets/fonts/boorsok-d5b9279ad4a5ba71cf8d41964d176491.otf') format('opentype'),
+       url('../assets/fonts/boorsok-12ad833f550876385355ef857c88860d.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Formula';
+  src: url('../assets/fonts/PPFormula-NarrowBlack-b69eb9ed0b5aeb3f1f5e83e837a26fdc.woff2') format('woff2'),
+       url('../assets/fonts/PPFormula-NarrowBlack-9f8b6a90c7b910c4fd35b34f64ee1d4a.woff') format('woff'),
+       url('../assets/fonts/PPFormula-NarrowBlack-d9d2ecc78c06352ed0947f83e2550bb0.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Formula Condensed Bold';
+  src: url('../assets/fonts/FormulaCondensed-Bold-675027962d8afcf81e6cca21afd696f3.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'neue-haas-grotesk-display', sans-serif, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #1B1B1C;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+p {
+  margin: 0;
+  font-family: 'Inter', 'neue-haas-grotesk-display', sans-serif, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #1B1B1C;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PP Formula', sans-serif, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.1;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  margin: 0;
+}
+
+h1 { font-size: 70px; }
+h2 { font-size: 55px; }
+h3 { font-size: 45px; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.3s ease all;
+}
+
+img {
+  max-width: 100%;
+  border: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+section {
+  width: 100%;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #1B1B1C;
+  border-color: #1B1B1C;
+}
+
+.btn-outline-light {
+  background: transparent;
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn-primary {
+  background: #D6001C;
+  color: #fff;
+  border-color: #D6001C;
+}
+
+.btn-light {
+  background: #fff;
+  color: #1B1B1C;
+  border-color: #fff;
+}
+
+.bg-red { background: #D6001C; color: #fff; }
+.bg-light { background: #F1F3F5; }
+
+.text-center { text-align: center; }
+
+.mb-none { margin-bottom: 0; }
+.mb-tiny { margin-bottom: 5px; }
+.mb-xxs { margin-bottom: 15px; }
+.mb-xs { margin-bottom: 30px; }
+.mb-s { margin-bottom: 50px; }
+.mb-m { margin-bottom: 75px; }
+.mb-l { margin-bottom: 100px; }
+.mb-xl { margin-bottom: 130px; }
+.mb-xxl { margin-bottom: 175px; }
+
+@media (max-width: 768px) {
+  body { font-size: 16px; }
+  h1 { font-size: 42px; }
+  h2 { font-size: 32px; }
+  h3 { font-size: 26px; }
+  .mb-l { margin-bottom: 50px; }
+  .mb-xl { margin-bottom: 50px; }
+  .mb-xxl { margin-bottom: 75px; }
+}
+
+@media (max-width: 600px) {
+  .mb-xxl { margin-bottom: 50px; }
+}

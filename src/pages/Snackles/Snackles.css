@@ -1,0 +1,64 @@
+.snackles-page { width: 100%; }
+
+.snackles-hero {
+  height: 50vh;
+  background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.snackles-hero-title {
+  font-size: 70px;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) { .snackles-hero-title { font-size: 42px; } }
+
+.snackles-hero-subtitle { font-size: 18px; opacity: 0.9; }
+
+.snackles-section { padding: 80px 0; }
+
+.snackles-intro {
+  max-width: 700px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.snackles-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+@media (max-width: 1024px) { .snackles-gallery { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .snackles-gallery { grid-template-columns: 1fr; } }
+
+.snackle-item { text-align: center; }
+
+.snackle-placeholder {
+  width: 100%;
+  aspect-ratio: 1;
+  background: #FFE0E0;
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+
+.snackle-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.container {
+  width: min(100%, 1440px);
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+@media (max-width: 1024px) { .container { padding-left: 45px; padding-right: 45px; } }
+@media (max-width: 600px) { .container { padding-left: 32px; padding-right: 32px; } }

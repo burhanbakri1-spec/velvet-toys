@@ -1,0 +1,120 @@
+.about-page { width: 100%; }
+
+.about-hero {
+  height: 100vh;
+  background: #D6001C;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+  z-index: 1;
+}
+
+.about-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.about-hero-title {
+  font-size: 70px;
+  font-weight: 300;
+  font-family: 'PP Formula', sans-serif;
+  color: #fff;
+}
+
+@media (max-width: 768px) { .about-hero-title { font-size: 42px; } }
+
+.about-section {
+  padding: 80px 0;
+}
+
+.about-section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-section-grid.reverse {
+  direction: rtl;
+}
+
+.about-section-grid.reverse > * {
+  direction: ltr;
+}
+
+@media (max-width: 1000px) {
+  .about-section-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .about-section-grid.reverse {
+    direction: ltr;
+  }
+}
+
+.about-section-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0;
+  display: block;
+}
+
+.about-section-text {
+  max-width: 62.5%;
+  margin: auto;
+}
+
+@media (max-width: 1000px) {
+  .about-section-text {
+    max-width: 85%;
+  }
+}
+
+.about-section-text h2 {
+  font-family: 'PP Formula', sans-serif;
+  font-weight: 300;
+  font-size: 55px;
+  line-height: 1.1;
+  margin: 25px 0;
+}
+
+.about-section-text p {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.about-cta {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.about-cta h3 {
+  font-family: 'PP Formula', sans-serif;
+  font-size: 45px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.bg-light { background: #F1F3F5; }
+
+.container {
+  width: min(100%, 1440px);
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+@media (max-width: 1024px) { .container { padding-left: 45px; padding-right: 45px; } }
+@media (max-width: 600px) { .container { padding-left: 32px; padding-right: 32px; } }

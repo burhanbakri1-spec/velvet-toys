@@ -1,0 +1,52 @@
+.brands-page { width: 100%; }
+
+.brands-hero {
+  height: 50vh;
+  background: #1B1B1C;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.brands-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.2) 100%);
+  z-index: 1;
+}
+
+.brands-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.brands-hero-title {
+  font-size: 70px;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) { .brands-hero-title { font-size: 42px; } }
+
+.brands-hero-subtitle {
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.brands-section {
+  padding: 80px 0;
+}
+
+.container {
+  width: min(100%, 1440px);
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+@media (max-width: 1024px) { .container { padding-left: 45px; padding-right: 45px; } }
+@media (max-width: 600px) { .container { padding-left: 32px; padding-right: 32px; } }

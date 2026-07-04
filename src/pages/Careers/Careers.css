@@ -1,0 +1,86 @@
+.careers-page { width: 100%; }
+
+.careers-hero {
+  height: 50vh;
+  background: #1B1B1C;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.careers-hero-title {
+  font-size: 70px;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) { .careers-hero-title { font-size: 42px; } }
+
+.careers-hero-subtitle { font-size: 18px; opacity: 0.8; }
+
+.careers-section { padding: 80px 0; }
+
+.careers-intro {
+  max-width: 700px;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.careers-cta-wrapper { margin-top: 32px; }
+
+.btn-primary {
+  background: #D6001C;
+  color: #fff;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 100em;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.2s;
+}
+
+.btn-primary:hover { opacity: 0.9; }
+
+.careers-values { padding: 80px 0; }
+
+.bg-light { background: #F1F3F5; }
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) { .values-grid { grid-template-columns: 1fr; } }
+
+.value-card {
+  text-align: center;
+  padding: 40px 24px;
+  background: #fff;
+  border-radius: 12px;
+}
+
+.value-card h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.value-card p {
+  font-size: 16px;
+  color: #666;
+}
+
+.container {
+  width: min(100%, 1440px);
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+@media (max-width: 1024px) { .container { padding-left: 45px; padding-right: 45px; } }
+@media (max-width: 600px) { .container { padding-left: 32px; padding-right: 32px; } }

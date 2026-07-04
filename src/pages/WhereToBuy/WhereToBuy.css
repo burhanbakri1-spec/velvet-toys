@@ -1,0 +1,96 @@
+.wtb-page { width: 100%; }
+
+.wtb-hero {
+  height: 50vh;
+  background: #D6001C;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.wtb-hero-title {
+  font-size: 70px;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) { .wtb-hero-title { font-size: 42px; } }
+
+.wtb-hero-subtitle { font-size: 18px; opacity: 0.8; }
+
+.wtb-section { padding: 80px 0; }
+
+.bg-light { background: #F1F3F5; }
+
+.retailer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 1024px) { .retailer-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .retailer-grid { grid-template-columns: 1fr; } }
+
+.retailer-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 24px;
+  background: #F1F3F5;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.retailer-card:hover {
+  background: #D6001C;
+  color: #fff;
+}
+
+.retailer-card h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.retailer-link {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.brand-links-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 40px;
+}
+
+@media (max-width: 1024px) { .brand-links-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 600px) { .brand-links-grid { grid-template-columns: repeat(2, 1fr); } }
+
+.brand-link {
+  display: block;
+  padding: 16px;
+  background: #fff;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.brand-link:hover {
+  background: #D6001C;
+  color: #fff;
+}
+
+.container {
+  width: min(100%, 1440px);
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+@media (max-width: 1024px) { .container { padding-left: 45px; padding-right: 45px; } }
+@media (max-width: 600px) { .container { padding-left: 32px; padding-right: 32px; } }

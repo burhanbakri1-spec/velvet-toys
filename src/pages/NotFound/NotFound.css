@@ -1,0 +1,35 @@
+.not-found-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #1B1B1C;
+  color: #fff;
+  text-align: center;
+}
+
+.not-found-title {
+  font-size: 120px;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+.not-found-text {
+  font-size: 24px;
+  margin-bottom: 32px;
+  opacity: 0.7;
+}
+
+.btn-primary {
+  background: #D6001C;
+  color: #fff;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 100em;
+  font-size: 16px;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-primary:hover { opacity: 0.9; }
